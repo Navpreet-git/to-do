@@ -1,14 +1,13 @@
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 5px solid black;
-    border-radius: 20px;
-    height: 400px;
-    overflow-y: auto;
-  }
-  
-  body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 5px solid black;
+  border-radius: 20px;
+  height: 400px;
+  overflow-y: auto;
+}
+ body {
     font-family: Arial, sans-serif;
   }
   
@@ -30,10 +29,11 @@
     padding: 10px;
     font-size: 16px;
     box-sizing: border-box;
+    border: 2px solid black;
   }
   
   #taskCategory {
-    width: 100px;
+    width: 120px;
   }
   
   button {
@@ -44,6 +44,7 @@
     color: white;
     border: none;
     cursor: pointer;
+    margin-bottom: 10px;
   }
   
   button:hover {
@@ -71,4 +72,15 @@
   .completed {
     text-decoration: line-through;
     color: #ccc;
+  }
+  .taskItem.personal {
+    border: 2px solid #3498db; 
+  }
+  
+  .taskItem.work {
+    border: 2px solid #e74c3c; 
+  }
+  
+  .taskItem.shopping {
+    border: 2px solid #2ecc71;
   }
