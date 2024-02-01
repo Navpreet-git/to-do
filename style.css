@@ -1,86 +1,118 @@
 .container {
-  max-width: 800px;
-  margin: 0 auto;
+  width: 500px;
+  margin: 0 auto;  
   padding: 20px;
   border: 5px solid black;
   border-radius: 20px;
   height: 400px;
   overflow-y: auto;
+  background-color: #ddd;
 }
- body {
-    font-family: Arial, sans-serif;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .input-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  #taskInput,
-  #taskCategory {
-    width: calc(100% - 100px);
-    padding: 10px;
-    font-size: 16px;
-    box-sizing: border-box;
-    border: 2px solid black;
-  }
-  
-  #taskCategory {
-    width: 120px;
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 10px;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  #taskList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .taskItem {
-    padding: 10px;
-    font-size: 16px;
-    background-color: #f2f2f2;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 10px;
-  }
-  
-  .taskItem:last-child {
-    margin-bottom: 0;
-  }
-  
-  .completed {
-    text-decoration: line-through;
-    color: #ccc;
-  }
-  .taskItem.personal {
-    border: 2px solid #3498db; 
-  }
-  
-  .taskItem.work {
-    border: 2px solid #e74c3c; 
-  }
-  
-  .taskItem.shopping {
-    border: 2px solid #2ecc71;
-  }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #88F6AC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  margin: 0; 
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+#taskInput,
+#taskCategory {
+  width: calc(100% - 100px);
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 2px solid black;
+}
+
+#taskCategory {
+  width: 120px;
+}
+
+.add-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.taskItem {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.taskItem:last-child {
+  margin-bottom: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.taskItem.personal {
+  border: 2px solid #3498db; 
+}
+
+.taskItem.work {
+  border: 2px solid #e74c3c; 
+}
+
+.taskItem.shopping {
+  border: 2px solid #2ecc71;
+}
+
+.delete-button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  width: 10px;
+  height: 10px;
+  margin-right: 12px;
+  margin-bottom: 7px;
+}
+
+.edit-button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  margin-bottom: 7px;
+}
